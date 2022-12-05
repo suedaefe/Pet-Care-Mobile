@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventsFragment">
+
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.example.petcare.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/toDoFra"
+        android:name="com.example.petcare.ToDoFra"
+        android:label="fragment_to_do"
+        tools:layout="@layout/fragment_to_do" />
+    <activity
+        android:id="@+id/petInfoViewActivity"
+        android:name="com.example.petcare.PetInfoViewActivity"
+        android:label="activity_pet_info_view"
+        tools:layout="@layout/activity_pet_info_view" />
+    <activity
+        android:id="@+id/weatherApi"
+        android:name="com.example.petcare.WeatherApi"
+        android:label="activity_weather_api"
+        tools:layout="@layout/activity_weather_api" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.example.petcare.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+</navigation>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE4EF"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="56dp"
+        android:text="Welcome to PetCare"
+        android:textColor="@color/ButtonColor"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_loginbackground"
+        android:layout_width="438dp"
+        android:layout_height="598dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_tv_loginandregister"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="50dp"
+        android:text="LOG IN"
+        android:textColor="#4D428E"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_loginbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView_loginbackground"
+        app:layout_constraintTop_toTopOf="@+id/textView_loginbackground" />
+
+    <EditText
+        android:id="@+id/editText_email_login"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/icon_account"
+        android:ems="10"
+        android:hint="  E-mail"
+        app:layout_constraintEnd_toEndOf="@+id/textView_loginbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView_loginbackground"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText_password_login"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/icon_password"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textView_loginbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView_loginbackground"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email_login" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/background_button"
+        android:text="LOG IN"
+        app:backgroundTint="@color/ButtonColor"
+        app:layout_constraintEnd_toEndOf="@+id/editText_password_login"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/editText_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password_login" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Don't have an account? "
+        app:layout_constraintEnd_toEndOf="@+id/textView_loginbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView_loginbackground"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView_register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Register now"
+        android:textColor="#4D428E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

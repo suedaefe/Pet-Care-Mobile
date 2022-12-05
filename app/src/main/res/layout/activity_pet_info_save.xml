@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE4EF"
+    tools:context=".PetInfoSaveActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="806dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/png_dog_cat" />
+
+
+
+    <EditText
+        android:id="@+id/editText_petname"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="250dp"
+        android:background="#FEFEFE"
+        android:drawableLeft="@drawable/icon_circle"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_petbreed"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_circle"
+        android:ems="10"
+        android:hint="Species, Breed"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_petname" />
+
+    <EditText
+        android:id="@+id/editText_petbirthday"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:drawableLeft="@drawable/icon_circle"
+        android:hint="Birthday"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_petbreed" />
+
+    <EditText
+        android:id="@+id/editText_petfm"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:drawableLeft="@drawable/icon_circle"
+        android:hint="Male/Female"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_petbirthday" />
+
+    <EditText
+        android:id="@+id/editText_petweight"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:drawableLeft="@drawable/icon_circle"
+        android:hint="Weight"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_petfm" />
+
+    <ImageButton
+        android:id="@+id/button_backhome"
+        android:layout_width="64dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back4" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="15dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_petweight" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="235dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="196dp"
+        android:text="Please fill in all fileds"
+        android:textColor="@color/ButtonColor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

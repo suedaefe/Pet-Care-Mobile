@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoFra">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="TO-DO LIST"
+        android:textColor="@color/ButtonColor"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/addTaskBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_round_button"
+        android:text="+"
+        android:textSize="30dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="577dp"
+        android:layout_marginTop="42dp" />
+
+
+</FrameLayout>
