@@ -1,3 +1,5 @@
+Android Studio'da kotlin kullanılarak geliştirilmiştir. Veriler Firebase kullanılarak depolanmıştır.
+
 <div style="display: flex; justify-content: space-between;">
     <img src="1.png" alt="Resim 1" style="width: 15%;">
     <img src="2.png" alt="Resim 2" style="width: 15%;">
